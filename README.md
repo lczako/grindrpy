@@ -5,7 +5,7 @@ A set of python tools for data preparation and analytics.
 
 ## Features
 
-* [Json flattener](grindrlabs/grindrpy/grindrpy/json_flattener/ReadMe.md)
+* [Json flattener](https://github.com/grindrlabs/grindrpy/tree/master/grindrpy/json_flattener)
 
 
 ## Upcoming
