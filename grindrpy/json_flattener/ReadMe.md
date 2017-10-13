@@ -1,6 +1,6 @@
 # JSON Flattener and Parser
 
-A script for parsing, flattening and transforming API json data format into a normalized json output with the desired key names and value types.
+A script for parsing, flattening and transforming json data into a normalized json output with the desired key names and value types.
 
 ### Building blocks
 
