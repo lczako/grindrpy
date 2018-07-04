@@ -10,15 +10,12 @@ class Flattener:
         class_vars = self.set_class_vars()
         for i in self.values:
             if i in class_vars:
-                self.__setattr__(i, getattr(self, i))
+                setattr(self, i, getattr(self, i))
             else:
-                self.__setattr__(i, Value(i, False))
+                setattr(self, i, Value(i, False))
 
     def __str__(self):
         return "\n".join(["%s = %s" % (k, v) for k, v in self.__dict__.iteritems()])
-
-    def __setattr__(self, key, value):
-        self.__dict__[key] = value
 
     def set_values(self):
         values = self.__class__.__field_names__
@@ -31,7 +28,7 @@ class Flattener:
         return class_vars
 
     def parse(self, json_object):
-        results = [(k, self.__dict__[k].getValue(json_object), isinstance(self.__dict__[k], ListValue)) for k in
+        results = [(k, getattr(self, k).getValue(json_object), isinstance(getattr(self, k), ListValue)) for k in
                    self.values]
         listval_count = None
         for name, value_result, is_listvalue in results:
