@@ -60,6 +60,6 @@ The list elements will be joined together by their order in the normalized json.
 
 ### Examples
 
-[Simple examples](Example_simple.md)
+[Simple examples](Flattener_examples_simple.md)
 
-[Complex examples](Example_complex.md)
+[Complex examples](Flattener_examples_complex.md)

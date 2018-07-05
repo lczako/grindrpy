@@ -2,6 +2,7 @@ from grindrpy.json_flattener.flattener import Flattener
 from grindrpy.json_flattener.value import Value, DerivedValue, ListValue
 import unittest
 
+
 class TestComplexExamples(unittest.TestCase):
 
     def test_nested_list(self):
